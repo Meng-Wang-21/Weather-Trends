@@ -1,0 +1,3 @@
+select city_data.year,city_data.avg_temp city_temp, global_data.avg_temp global_temp from city_data
+inner join global_data on global_data.year=city_data.year
+where city_data.city='Boston';
